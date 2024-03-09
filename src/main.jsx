@@ -8,6 +8,8 @@ import {
 import Root from './Root';
 import Home from './Home/Home';
 import ErrorPage from './ErrorPage';
+import JonDetails from './Componets/JobDetails/JonDetails';
+import Applied from './Componets/Applied/Applied';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,16 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>
+      },
+      {
+        path:'job/:id',
+        element:<JonDetails></JonDetails>,
+        loader: ()=> fetch("../public/data/jobs.json")
+      },
+      {
+        path:"/applied",
+        element:<Applied></Applied>,
+        loader: ()=> fetch("../public/data/jobs.json")
       }
     ] 
     
