@@ -29,8 +29,8 @@ const JonDetails = () => {
   return (
     <div>
       <h1 className="text-5xl py-10 text-center font-bold">Job Details</h1>
-      <div className="container grid grid-cols-3">
-        <div className="col-span-2">
+      <div className="container grid md:grid-cols-3">
+        <div className="md:col-span-2">
           <p>
             <span className="font-bold">Job description: </span>
             {job_description}

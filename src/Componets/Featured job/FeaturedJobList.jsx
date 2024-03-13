@@ -24,7 +24,7 @@ const FeaturedJobList = () => {
           <Feature key={job.id} job={job}></Feature>
         ))}
       </div>
-      <div className={DataLength === Jobs.length && "hidden"}>
+      <div>
         <div className="flex justify-center my-6">
           <button
             onClick={() => {

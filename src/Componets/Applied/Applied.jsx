@@ -15,7 +15,7 @@ const Applied = () => {
     }
   }, [jobs]);
 
-  return <div className="">
+  return <div>
   <Helmet>
     <title>Career Hub | Appied job</title>
   </Helmet>

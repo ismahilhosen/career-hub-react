@@ -16,7 +16,7 @@ const JobApplied = ({ job }) => {
   } = job;
   return (
     <div className="container">
-      <div className="card card-side bg-base-100 shadow-xl p-6 border border-drak-2">
+      <div className="card card-side bg-base-100 shadow-xl p-6 border border-drak-2 flex-col md:flex-row items-center">
         <figure className="w-38">
           <img src={logo} />
         </figure>

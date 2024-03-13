@@ -11,6 +11,8 @@ import ErrorPage from './ErrorPage';
 import JonDetails from './Componets/JobDetails/JonDetails';
 import Applied from './Componets/Applied/Applied';
 import { HelmetProvider } from 'react-helmet-async';
+import Login from './Componets/Login/Login';
+import Register from './Componets/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -31,8 +33,16 @@ const router = createBrowserRouter([
         path:"/applied",
         element:<Applied></Applied>,
         loader: ()=> fetch("../public/data/jobs.json")
+      },
+      {
+        path:"/login",
+        element:<Login></Login>
+      },
+      {
+        path:"/register",
+        element:<Register></Register>
       }
-    ] 
+    ],
     
   },
 ]);

@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+firebass.init.js
 dist-ssr
 *.local
 
